@@ -1,0 +1,21 @@
+{
+  "name": "habr",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "unslider": "^2.0.3"
+  }
+}

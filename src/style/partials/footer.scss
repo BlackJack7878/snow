@@ -1,0 +1,167 @@
+.footer {
+	background-color: #0c0c0c;
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&-header {
+		color: white;
+		font: 700 20px $Playfair;
+		letter-spacing: 0.25px;
+		margin-bottom: 34px;
+	}
+
+	&-aboutus {
+		width: 30%;
+
+		&-text {
+			font: 400 15px $Playfair;
+			letter-spacing: 0.25px;
+			line-height: 24px;
+			color: #e9e9e9;
+		}
+
+		ul {
+			margin-top: 32px;
+			padding: 0;
+		}
+
+		&-soc {
+			display: inline-block;
+			margin-left: 5px;
+			margin-right: 5px;
+
+			.fa {
+				color: white;
+			}
+
+			&:hover, &:active, &:focus {
+				.fa {
+					color: rgb(191, 191, 191);
+				}
+			}
+		}
+	}
+
+	&-twits {
+		width: 32%;
+
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		.fa {
+			color: white;
+			top: 6px;
+			left: 3px;
+			position: absolute;
+		}
+
+		&-text {
+			display: inline-block;
+			position: relative;
+			margin-bottom: 14px;
+			color: #e9e9e9;
+			font: 400 15px $WorkSans;
+			letter-spacing: 0.05px;
+			padding-left: 40px;
+			line-height: 24px;
+		}
+	}
+
+	&-insta {
+		width: 34%;
+
+		.footer-header {
+			padding-left: 10px;
+		}
+
+		ul {
+			padding: 0;
+			text-align: center;
+		}
+
+		&-item {
+			display: inline-block;
+			position: relative;
+			width: 84px;
+			height: 84px;
+			background-color: gray;
+			margin-bottom: 10px;
+			margin-left: 5px;
+			margin-right: 5px;
+			cursor: pointer;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				transition: all 0.3s ease;
+			}
+
+			&-layout {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 10;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				opacity: 0;
+				transition: all 0.3s ease;
+			}
+
+			&:hover, &:active, &:focus {
+
+				img {
+					transform: scale(1.2);
+				}
+
+				.footer-insta-item-layout {
+					opacity: 1;
+				}
+			}
+		}
+
+	}
+}
+
+.copy {
+	background-color: #0c0c0c;
+	color: white;
+	text-align: center;
+	border-top: 1px solid #252525;
+
+	&-text {
+		display: inline-block;
+		font: 400 14px $WorkSans;
+		letter-spacing: 0.05px;
+		line-height: 42px;
+	}
+}
+
+@media (max-width: 620px) {
+	.footer {
+
+		&-wrapper {
+			flex-direction: column;
+		}
+
+		&-twits, &-insta, &-aboutus {
+			width: 100%;
+		}
+
+		&-insta {
+
+			.footer-header {
+				padding-left: 0;
+			}
+		}
+
+	}
+}

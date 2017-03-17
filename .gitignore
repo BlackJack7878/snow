@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Ignore all logfiles and tempfiles.
+/node_modules/*
+/bower_components/*

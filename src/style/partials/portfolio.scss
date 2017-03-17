@@ -1,0 +1,68 @@
+.portfolio {
+	padding-top: 164px;
+	min-height: 100%;
+	text-align: center;
+
+	&-wrapper {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&-item {
+		width: 390px;
+		height: 390px;
+		position: relative;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			transition: all 0.5s ease;
+		}
+
+		&-layout {
+			background-color: rgba(0, 0, 0, 0.8);
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			transition: all 0.5s ease;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		&-name {
+			font: 700 24px $Playfair;
+			color: white;
+			line-height: 60px;
+			letter-spacing: 0.3px;
+		}
+
+		&-info {
+			font: 500 14px $WorkSans;
+			color: white;
+			line-height: 20px;
+			letter-spacing: 0.25px;
+			text-transform: uppercase;
+		}
+
+		&:hover, &:active, &:focus {
+
+			.portfolio-item-layout {
+				opacity: 1;
+			}
+
+			img {
+				transform: scale(1.2);
+			}
+		}
+
+	}
+
+}

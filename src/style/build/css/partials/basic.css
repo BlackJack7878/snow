@@ -1,0 +1,61 @@
+a {
+  text-decoration: none; }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6; }
+
+body {
+  height: 100%; }
+
+.content {
+  max-width: 1190px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.cat .cat-btn {
+  color: #171717;
+  transition: all 0.3s ease;
+  cursor: pointer; }
+  .cat .cat-btn:hover, .cat .cat-btn:active, .cat .cat-btn:focus {
+    transform: scale(1.2); }
+
+.cat-menu {
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 8px; }
+  .cat-menu-item {
+    margin: 10px;
+    margin-top: 0;
+    font: 500 14px "Work Sans", sans-serif;
+    letter-spacing: 0.3px;
+    color: #171717;
+    display: inline-block;
+    transition: opacity 0.8s ease;
+    opacity: 0;
+    cursor: pointer; }
+    .cat-menu-item:hover, .cat-menu-item:active, .cat-menu-item:focus {
+      color: #5f5f5f; }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@keyframes toTop {
+  0% {
+    transform: translateY(30px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@media (max-width: 1024px) {
+  .content {
+    padding-left: 20px;
+    padding-right: 20px; } }

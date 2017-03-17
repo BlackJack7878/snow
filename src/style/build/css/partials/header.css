@@ -1,0 +1,21 @@
+.header {
+  height: 670px;
+  background-color: #636363; }
+  .header-menu {
+    padding-top: 33px;
+    padding-bottom: 33px; }
+    .header-menu-wrapper {
+      display: flex;
+      max-width: 1170px;
+      margin: auto;
+      background-color: red;
+      justify-content: space-between;
+      align-items: center; }
+    .header-menu-logo {
+      width: 82px;
+      height: 32px; }
+    .header-menu-list {
+      display: flex;
+      list-style: none; }
+      .header-menu-list-item {
+        margin: auto; }
