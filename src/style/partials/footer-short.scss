@@ -1,0 +1,47 @@
+.footerS {
+	background-color: #ebebeb;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	&-list {
+		padding: 0;
+		margin: 0;
+	}
+
+	&-soc {
+		display: inline-block;
+		margin-left: 5px;
+		margin-right: 5px;
+
+		.fa {
+			color: #999999;
+			transition: all 0.3s ease;
+		}
+
+		&:active, &:focus, &:hover {
+			.fa {
+				color: black;
+			}
+		}
+	}
+
+	&-copy {
+		color: $color_text_light;
+		margin-top: 14px;
+
+		.fa {
+			font-size: 13px;
+		}
+
+		&-text {
+			display: inline-block;
+			font: 400 14px $WorkSans;
+			letter-spacing: 0.05px;
+			line-height: 25px;
+			margin: 0;
+		}
+
+	}
+
+}

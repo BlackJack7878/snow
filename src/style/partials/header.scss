@@ -1,5 +1,5 @@
 .header {
-	z-index: 100;
+	z-index: 500;
 
 	&-menu {
 		padding-top: 28px;
@@ -61,7 +61,9 @@
 
 .mainheader {
 	height: 670px;
-	background-color: #636363;
+	background-image: url('../img/body/bg.jpeg');
+	background-size: cover;
+	background-position: center;
 
 	&-text {
 		text-align: center;
@@ -140,7 +142,7 @@
 		margin-bottom: 0;
 
 		&-item {
-			background-color: #f6f6f6 !important;
+			background-color: white !important;
 
 			a {
 				color: black;

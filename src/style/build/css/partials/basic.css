@@ -36,6 +36,7 @@ body {
     display: inline-block;
     transition: opacity 0.8s ease;
     opacity: 0;
+    visibility: hidden;
     cursor: pointer; }
     .cat-menu-item:hover, .cat-menu-item:active, .cat-menu-item:focus {
       color: #5f5f5f; }

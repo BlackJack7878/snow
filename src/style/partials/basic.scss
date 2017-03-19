@@ -55,6 +55,7 @@ $Playfair: 'Playfair Display', serif;
 			display: inline-block;
 			transition: opacity 0.8s ease;
 			opacity: 0;
+			visibility: hidden;
 			cursor: pointer;
 
 			&:hover, &:active, &:focus {
