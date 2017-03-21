@@ -16,30 +16,38 @@ body {
   padding-left: 10px;
   padding-right: 10px; }
 
-.cat .cat-btn {
-  color: #171717;
-  transition: all 0.3s ease;
-  cursor: pointer; }
-  .cat .cat-btn:hover, .cat .cat-btn:active, .cat .cat-btn:focus {
-    transform: scale(1.2); }
-
-.cat-menu {
-  padding: 0;
-  margin-top: 8px;
-  margin-bottom: 8px; }
-  .cat-menu-item {
-    margin: 10px;
-    margin-top: 0;
-    font: 500 14px "Work Sans", sans-serif;
-    letter-spacing: 0.3px;
+.cat {
+  padding-top: 45px;
+  padding-bottom: 45px; }
+  .cat .cat-btn {
     color: #171717;
-    display: inline-block;
-    transition: opacity 0.8s ease;
-    opacity: 0;
-    visibility: hidden;
+    transition: all 0.3s ease;
     cursor: pointer; }
-    .cat-menu-item:hover, .cat-menu-item:active, .cat-menu-item:focus {
-      color: #5f5f5f; }
+    .cat .cat-btn:hover, .cat .cat-btn:active, .cat .cat-btn:focus {
+      transform: scale(1.2); }
+  .cat-menu {
+    padding: 0;
+    max-height: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden; }
+    .cat-menu-item {
+      margin: 10px;
+      margin-top: 0;
+      font: 500 14px "Work Sans", sans-serif;
+      letter-spacing: 0.3px;
+      color: #171717;
+      display: inline-block;
+      transition: opacity 0.8s ease;
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer; }
+      .cat-menu-item a {
+        color: #171717; }
+      .cat-menu-item:hover a, .cat-menu-item:active a, .cat-menu-item:focus a {
+        color: #5f5f5f; }
 
 @font-face {
   font-family: 'FontAwesome';

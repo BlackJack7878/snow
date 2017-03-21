@@ -12,6 +12,13 @@ $(document).ready(function() {
 		arrows: false
 	});
 
+	$(".work-slider").unslider({
+		arrows: false,
+		autoplay: true,
+		infinite: true,
+		delay: 5000
+	});
+
 	// scrolling to anchor from another page
 	// *only* if we have anchor on the url
 	if(window.location.hash.length > 0) {
@@ -35,11 +42,19 @@ $(document).ready(function() {
 	var x = false;
 	$('.cat-btn').on('click', function(){
 		if (!x) {
+			$('.cat').css('padding-bottom', '0');
+			$('.cat-menu').css('margin-top', '10px');
+			$('.cat-menu').css('margin-bottom', '10px');
+			$('.cat-menu').css('max-height', '600px');
 			$('.cat-menu-item').css('visibility', 'visible');
 			$('.cat-menu-item').css('opacity', '1');
 			x = true;
 		}
 		else {
+			$('.cat').css('padding-bottom', '45px');
+			$('.cat-menu').css('margin-top', '0px');
+			$('.cat-menu').css('margin-bottom', '0px');
+			$('.cat-menu').css('max-height', '0');
 			$('.cat-menu-item').css('visibility', 'hidden');
 			$('.cat-menu-item').css('opacity', '0');
 			x = false;

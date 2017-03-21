@@ -1,0 +1,186 @@
+.work {
+	min-height: 100%;
+	padding-top: 145px;
+	position: relative;
+
+	&-header {
+		font: 700 38px $Playfair;
+		margin-bottom: 10px;
+		letter-spacing: 0.25px;
+		line-height: 84px;
+		color: $color_text_dark;
+	}
+
+	&-wrapper {}
+
+	&-info {
+		display: flex;
+		justify-content: space-between;
+
+		&-text {
+			max-width: 770px;
+			font: 400 15px $WorkSans;
+			color: $color_text_light;
+			letter-spacing: 0.05px;
+			line-height: 24px;
+		}
+
+		&-list {
+			margin: 0;
+			list-style: none;
+			padding: 0;
+			padding-left: 30px;
+			max-width: 270px;
+		}
+
+		&-item {
+			color: $color_text_light;
+			font: 400 15px $WorkSans;
+			line-height: 30px;
+			letter-spacing: 0.05px;
+
+			&-bold {
+				font-weight: 500;
+				color: $color_text_dark;
+			}
+
+			a {
+				color: $color_text_light;
+
+				&:hover, &:active, &:focus {
+					color: $color_text_dark;
+				}
+			}
+
+		}
+
+	}
+
+	&-slider {
+		margin-top: 90px;
+		height: 570px;
+
+		ul {
+			padding: 0;
+		}
+
+		&-slide {
+			overflow: hidden;
+
+			&-wrap {
+				position: relative;
+				height: 570px;
+			}
+
+			img {
+				position: absolute;
+				width: 100%;
+				min-height: 100%;
+				top: 50%;
+				right: 50%;
+				transform: translateY(-50%) translateX(50%);
+				display: block;
+			}
+
+		}
+
+	}
+
+	.unslider-nav {
+		display: none;
+	}
+
+	&-nav {
+		text-align: center;
+		height: 100%;
+		background-color: white;
+
+		&-switch {
+			color: #1d1d1d;
+			letter-spacing: 0.1px;
+			font: 500 14px $WorkSans;
+			text-transform: uppercase;
+			transition: all 0.3s ease;
+
+			.fa {
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+
+			&:hover {
+				color: gray;
+			}
+		}
+
+		&-switch-left {
+			float: left;
+		}
+
+		&-switch-right {
+			float: right;
+		}
+
+	}
+
+}
+
+@media (min-height: 1600px) {
+	.work {
+
+		&-slider {
+			height: 900px;
+
+			&-slide-wrap {
+				height: 900px;
+			}
+		}
+
+	}
+}
+
+@media (max-width: 991px) {
+	.work {
+
+		&-info {
+			flex-wrap: wrap;
+
+			&-list {
+				padding-left: 0;
+				margin-top: 10px;
+			}
+		}
+
+	}
+}
+
+@media (max-width: 450px) {
+	.work {
+
+		&-slider {
+			height: 300px;
+
+			&-slide-wrap {
+				height: 300px;
+			}
+		}
+
+	}
+}
+
+@media (max-width: 370px) {
+	.work {
+
+		&-nav-switch {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			display: block;
+			float: none;
+			text-align: center;
+
+			.fa {
+				margin: 0;
+			}
+		}
+
+	}
+}

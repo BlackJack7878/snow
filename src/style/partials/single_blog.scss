@@ -1,0 +1,159 @@
+.post {
+	min-height: 100%;
+	padding-top: 100px;
+
+	.content {
+		max-width: 780px !important;
+	}
+
+	&-img {
+		position: relative;
+		height: 570px;
+		background-color: gray;
+		overflow: hidden;
+
+		img {
+			min-width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+
+	&-header {
+		margin-top: 85px;
+		margin-bottom: 15px;
+		font: 700 38px $Playfair;
+		line-height: 50px;
+		letter-spacing: 0.35px;
+		color: $color_text_dark;
+	}
+
+	&-info {
+
+		&-list {
+			margin: 0;
+			margin-bottom: 25px;
+			list-style: none;
+			padding: 0;
+		}
+
+		&-item {
+			display: inline-block;
+			text-transform: uppercase;
+			font: 500 12px $WorkSans;
+			letter-spacing: 0.25px;
+			line-height: 24px;
+
+			a {
+				color: $color_text_dark;
+
+				&:hover, &:focus, &:active {
+					color: $color_text_light;
+				}
+			}
+
+			ul {
+				margin: 0;
+			}
+
+			&-cat {
+				margin-left: 20px;
+				margin-right: 20px;
+
+				&:first-child {
+					margin-left: 40px;
+				}
+
+				&:last-child {
+					margin-right: 40px;
+				}
+
+			}
+		}
+
+	}
+
+	&-text {
+		font: 400 15px $WorkSans;
+		line-height: 24px;
+		color: #4b4b4b;
+		letter-spacing: 0.05px;
+	}
+
+	&-soc {
+		margin-bottom: 50px;
+		margin-top: 25px;
+
+		a {
+			font: 400 15px $WorkSans;
+			color: $color_text_dark;
+			letter-spacing: 0.05px;
+			line-height: 30px;
+
+			&:hover, &:focus, &:active {
+				color: $color_text_light;
+			}
+		}
+
+		&-bold {
+			font: 500 15px $WorkSans;
+			color: $color_text_dark;
+			letter-spacing: 0.05px;
+			line-height: 30px;
+		}
+
+	}
+
+	&-nav {
+		text-align: center;
+		height: 100%;
+		background-color: white;
+
+		&-switch {
+			color: #1d1d1d;
+			letter-spacing: 0.1px;
+			font: 500 14px $WorkSans;
+			text-transform: uppercase;
+			transition: all 0.3s ease;
+
+			.fa {
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+
+			&:hover {
+				color: gray;
+			}
+		}
+
+		&-switch-left {
+			float: left;
+		}
+
+		&-switch-right {
+			float: right;
+		}
+
+	}
+
+}
+
+@media (max-width: 370px) {
+	.post {
+
+		&-nav-switch {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			display: block;
+			float: none;
+			text-align: center;
+
+			.fa {
+				margin: 0;
+			}
+		}
+
+	}
+}

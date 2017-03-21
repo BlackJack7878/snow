@@ -31,6 +31,9 @@ $Playfair: 'Playfair Display', serif;
 }
 
 .cat {
+	padding-top: 45px;
+	padding-bottom: 45px;
+
 	.cat-btn {
 		color: $color_text_dark;
 		transition: all 0.3s ease;
@@ -43,8 +46,12 @@ $Playfair: 'Playfair Display', serif;
 
 	&-menu {
 		padding: 0;
+		max-height: 0;
 		margin-top: 8px;
 		margin-bottom: 8px;
+		max-width: 900px;
+		margin: auto;
+		overflow: hidden;
 
 		&-item {
 			margin: 10px;
@@ -58,8 +65,14 @@ $Playfair: 'Playfair Display', serif;
 			visibility: hidden;
 			cursor: pointer;
 
+			a {
+				color: $color_text_dark;
+			}
+
 			&:hover, &:active, &:focus {
-				color: $color_text_light;
+				a {
+					color: $color_text_light;
+				}
 			}
 		}
 	}
