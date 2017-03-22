@@ -374,6 +374,8 @@
 			}
 
 			&-text {
+				height: 90px;
+				overflow: hidden;
 				font: 400 15px $WorkSans;
 				color: $color_text_light;
 				line-height: 24px;

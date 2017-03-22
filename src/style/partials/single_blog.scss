@@ -138,6 +138,161 @@
 
 	}
 
+	&-coms {
+		background-color: white;
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		&-header {
+			font: 700 24px $Playfair;
+			color: $color_text_dark;
+			letter-spacing: 0.25px;
+		}
+
+		&-list {
+			padding: 0;
+			list-style: none;
+		}
+
+		&-item {
+			display: inline-block;
+
+			&-info {
+				display: flex;
+				justify-content: space-between;
+				padding-bottom: 20px;
+				align-items: center;
+
+				&-name {
+					font: 500 15px $WorkSans;
+					color: $color_text_dark;
+					line-height: 30px;
+					letter-spacing: 0.05px;
+				}
+
+				&-date {
+					text-transform: uppercase;
+					font: 500 12px $WorkSans;
+					line-height: 24px;
+					color: $color_text_dark;
+					letter-spacing: 0.25px;
+				}
+
+			}
+
+			&-text {
+				font: 400 15px $WorkSans;
+				letter-spacing: 0.05px;
+				line-height: 24px;
+				color: #4b4b4b;
+			}
+
+		}
+
+	}
+
+	&-msg {
+
+		&-header {
+			color: $color_text_dark;
+			font: 700 24px $Playfair;
+			letter-spacing: 0.25px;
+			margin-bottom: 10px;
+		}
+
+		&-form {
+			padding-bottom: 60px;
+
+			&-input-wrapper {
+				margin-top: 30px;
+				padding: 0px 20px;
+				background-color: white;
+			}
+
+			input {
+				font: 400 14px $WorkSans;
+				color: #858585;
+				line-height: 24px;
+				letter-spacing: 0.05px;
+				border-width: 0px;
+				outline: none;
+				width: 100%;
+				padding-top: 12px;
+				padding-bottom: 12px;
+			}
+
+			textarea {
+				width: 100%;
+				resize: none;
+				height: 146px;
+				font: 400 14px $WorkSans;
+				color: #858585;
+				line-height: 24px;
+				letter-spacing: 0.05px;
+				border-width: 0px;
+				outline: none;
+				padding: 12px 0px;
+			}
+
+			&-wrapper {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				.post-msg-form-input-wrapper {
+					width: 43%;
+				}
+			}
+
+			&-btn {
+				color: white;
+				text-transform: uppercase;
+				border-width: 0px;
+				background-color: #252525;
+				font: 500 14px $WorkSans;
+				letter-spacing: 0.25px;
+				padding: 19px 34px;
+				outline: none;
+				cursor: pointer;
+				margin-top: 30px;
+				transition: all 0.3s ease;
+
+				&:hover, &:focus, &:active {
+					background-color: black;
+				}
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width: 660px) {
+	.post {
+
+		&-msg {
+			
+			&-form {
+				width: 100%;
+				text-align: center;
+
+				&-wrapper {
+					justify-content: center;
+
+					.post-msg-form-input-wrapper {
+						width: 100%;
+					}
+				}
+
+				&-btn {
+					width: 100%;
+				}
+			}
+		}
+
+	}
 }
 
 @media (max-width: 370px) {
